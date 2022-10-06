@@ -1,66 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Meeting Notes</title>
-  </head>
-  <body>
+
+<head>
+  <meta name="author" content="Bryan Min">
+  <title>Meeting Notes</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <h1>CSE 110 Notes</h1>
+    <nav>
+      <a href="https://bryanmin.me/">Portfolio</a> •
+      <a href="https://bdhmin.github.io/CSE110/">CSE 110 GH Page</a> •
+      <a href="https://github.com/bdhmin">Github Profile</a>
+    </nav>
+  </header>
+  <main>
     <h1>Annotate Transcript Brainstorm</h1>
-    <h2>Brainstorming the <b>highlight tool</b> of the transcript page</h2>
+    <h2>Brainstorming the <strong>highlight tool</strong> of the transcript page</h2>
     <h4>Sunday, October 9, 2022</h4>
 
-    <h2>Attendance List</h2>
-    <ul>
-      <li>Bryan</li>
-      <li>Caleb</li>
-      <li>Bobby</li>
-      <li>Matty</li>
-      <li>Steve</li>
-      <li>Daniel</li>
-    </ul>
+    <hr>
+    <section>
+      <h2>Attendance List</h2>
+      <ul>
+        <li>Bryan</li>
+        <li>Caleb</li>
+        <li>Bobby</li>
+        <li>Matty</li>
+        <li>Steve</li>
+        <li>Daniel</li>
+      </ul>
 
-    <h2>Meeting Agenda</h2>
-    <ol>
-      <li>Overview of Entity Structure</li>
-      <li>Design plan of transcript indexing</li>
-      <li>Highlight feature</li>
-      <li>Integrating components into page</li>
-      <li>Upload more transcripts for testing</li>
-    </ol>
+      <h2>Meeting Agenda</h2>
+      <ol>
+        <li>Overview of Entity Structure</li>
+        <li>Design plan of transcript indexing</li>
+        <li>Highlight feature</li>
+        <li>Integrating components into page</li>
+        <li>Upload more transcripts for testing</li>
+      </ol>
 
-    <h3>Unfinished things from last meeting</h3>
-    <ul>
-      <li>Overview of the repo</li>
-    </ul>
+      <h3>Unfinished things from last meeting</h3>
+      <ul>
+        <li>Overview of the repo</li>
+      </ul>
 
-    <h3>New things to talk about</h3>
-    <ul>
-      <li>The specific features of the transcript page</li>
-    </ul>
+      <h3>New things to talk about</h3>
+      <ul>
+        <li>The specific features of the transcript page</li>
+      </ul>
+    </section>
+    <hr>
 
-    <h3>Team Comments/Notes</h3>
+    <section>
+      <h3>Team Comments/Notes</h3>
 
-    <h4>Interactive Notes</h4>
-    <textarea placeholder="Type temporary notes here"></textarea>
-    <br>
+      <h4>Interactive Notes</h4>
+      <textarea placeholder="Type temporary notes here"></textarea>
+      <br>
 
-    <h4>Questions</h4>
+      <h4>Questions</h4>
 
-    <em>What does the annotate feature do?</em>
-    <p>The annotate feature allows users to highlight certain texts and save them as annotations.</p>
+      <em>What does the annotate feature do?</em>
+      <p>The annotate feature <span>allows users to highlight certain texts</span> and save them as annotations.</p>
 
-    <details>
-      <summary>More about highlighting</summary>
-      <p>The highlight tool doesn't manipulate the DOM anymore. Instead, it creates a box behind the text that is still hoverable by using the pixel coordinates of the cursor.</p>
-    </details>
+      <details>
+        <summary><i>More about highlighting</i></summary>
+        <p>The highlight tool doesn't <strong>manipulate the DOM anymore</strong>. Instead, it creates a box behind the
+          text that is still hoverable by using the <em>pixel coordinates</em> of the cursor.</p>
+      </details>
+      <hr>
 
-    <h4>Components</h4>
-    <img src="image.png" alt="Components">
+      <div>
+        <h4>Components</h4>
+        <img src="assets/image.png" alt="Components">
 
-    <h4>Highlight Demo</h4>
-    <video src="video.mov" controls></video>
+        <h4>Highlight Demo</h4>
+        <video src="assets/video.mov" controls></video>
 
-    <h4>Shared music</h4>
-    <audio src="music.m4a" controls></audio>
+        <h4>Shared music</h4>
+        <audio src="assets/music.m4a" controls></audio>
+      </div>
+    </section>
 
-  </body>
+    <section>
+      <h4>Submit a form</h4>
+      <form>
+        <fieldset>
+          <legend>Intro</legend>
+          <label>Name</label>
+          <input placeholder="Lastname, Firstname">
+          <br>
+
+          <label>Class Level</label>
+          <input list="grade">
+          <datalist id="grade">
+            <option value="First year">
+            <option value="Second year">
+            <option value="Third year">
+            <option value="Fourth year">
+          </datalist>
+          <br>
+
+          <label for="team">Select team</label>
+          <select id="team">
+            <option value="ui">UI/UX</option>
+            <option value="front">Frontend</option>
+            <option value="back">Backend</option>
+            <option value="scrum">Scrum</option>
+          </select>
+          <br>
+
+          <button>Submit</button>
+        </fieldset>
+
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <hr>
+    <div><b>Made by Bryan Min - CSE 110 Fall 2022</b></div>
+  </footer>
+</body>
+
 </html>
