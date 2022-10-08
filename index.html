@@ -24,14 +24,12 @@
     <hr>
     <section>
       <h2>Attendance List</h2>
-      <ul>
-        <li>Bryan</li>
-        <li>Caleb</li>
-        <li>Bobby</li>
-        <li>Matty</li>
-        <li>Steve</li>
-        <li>Daniel</li>
-      </ul>
+      <div><input type="checkbox">Bryan</div>
+      <div><input type="checkbox">Caleb</div>
+      <div><input type="checkbox">Bobby</div>
+      <div><input type="checkbox">Matty</div>
+      <div><input type="checkbox">Steve</div>
+      <div><input type="checkbox">Daniel</div>
 
       <h2>Meeting Agenda</h2>
       <ol>
@@ -91,7 +89,7 @@
         <fieldset>
           <legend>Intro</legend>
           <label>Name</label>
-          <input placeholder="Lastname, Firstname">
+          <input placeholder="Lastname, Firstname" type="text">
           <br>
 
           <label>Class Level</label>
@@ -113,9 +111,16 @@
           </select>
           <br>
 
+          <label>Can you attend next meeting?</label>
+          <div><input name="attend" type="radio">Yes</div>
+          <div><input name="attend" type="radio">No</div>
+
+          <label>Your birthday</label>
+          <input type="date">
+          <br>
+
           <button>Submit</button>
         </fieldset>
-
       </form>
     </section>
 
