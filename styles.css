@@ -1,0 +1,39 @@
+* {
+  color: rgb(36, 39, 44);
+}
+
+header {
+  color: slategray;
+}
+
+h1 {
+  color: hsl(223deg 20% 25%);
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+img {
+  
+}
+
+.check {
+  color: #3a4953;
+}
+
+form {
+  background-color: whitesmoke;
+}
+
+fieldset {
+  border: none;
+}
