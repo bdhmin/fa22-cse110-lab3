@@ -53,6 +53,19 @@
         <input id="daniel" type="checkbox"><label for="daniel">Daniel</label>
       </div>
     </section>
+
+    <h3>Subteams</h3>
+    <section class="grid">
+      <div class="user lead">Richy (Team Lead)</div>
+      <div class="user">Bryan</div>
+      <div class="user">Caleb</div>
+      <div class="user">Bobby</div>
+      <div class="user">Matty</div>
+      <div class="user">Steve</div>
+      <div class="user">Daniel</div>
+    </section>
+    <hr>
+
     <section>
 
       <h2>Meeting Agenda</h2>
@@ -74,8 +87,8 @@
         <li>The specific features of the transcript page</li>
       </ul>
     </section>
-    <hr>
 
+    <hr>
     <section>
       <h3>Team Comments/Notes</h3>
 
@@ -90,10 +103,12 @@
         <p>A: The annotate feature <span>allows users to highlight certain texts</span> and save them as annotations.</p>
       </div>
 
-      <details>
+      <details class="QA additional-info">
         <summary><i>More about highlighting</i></summary>
         <p>The highlight tool doesn't <strong>manipulate the DOM anymore</strong>. Instead, it creates a box behind the
           text that is still hoverable by using the <em>pixel coordinates</em> of the cursor.</p>
+        <p>The highlight tool also is built to be overlappable without excessive computations.</p>
+        <p>The highlighter can now be used with more versatility, allowing the platform to become a more powerful tool for learning</p>
       </details>
       <hr>
 
@@ -119,36 +134,43 @@
       <form>
         <fieldset>
           <legend>Intro</legend>
-          <label>Name</label>
-          <input placeholder="Lastname, Firstname" type="text">
-          <br>
 
-          <label>Class Level</label>
-          <input list="grade">
-          <datalist id="grade">
-            <option value="First year">
-            <option value="Second year">
-            <option value="Third year">
-            <option value="Fourth year">
-          </datalist>
-          <br>
+          <div>
+            <label>Name</label>
+            <input placeholder="Johnny Appleseed" type="text">
+          </div>
 
-          <label for="team">Select team</label>
-          <select id="team">
-            <option value="ui">UI/UX</option>
-            <option value="front">Frontend</option>
-            <option value="back">Backend</option>
-            <option value="scrum">Scrum</option>
-          </select>
-          <br>
+          <div>
+            <label>Class Level</label>
+            <input list="grade">
+            <datalist id="grade">
+              <option value="First year">
+              <option value="Second year">
+              <option value="Third year">
+              <option value="Fourth year">
+            </datalist>
+          </div>
 
-          <label>Can you attend next meeting?</label>
-          <div><input name="attend" type="radio">Yes</div>
-          <div><input name="attend" type="radio">No</div>
+          <div>
+            <label for="team">Select team</label>
+            <select id="team">
+              <option value="ui">UI/UX</option>
+              <option value="front">Frontend</option>
+              <option value="back">Backend</option>
+              <option value="scrum">Scrum</option>
+            </select>
+          </div>
 
-          <label>Your birthday</label>
-          <input type="date">
-          <br>
+          <div>
+            <label>Can you attend next meeting?</label>
+            <input name="attend" type="radio" id="attend"><label for="attend">Yes</label>
+            <input name="attend" type="radio" id="attend"><label for="attend">No</label>
+          </div>
+
+          <div>
+            <label>Your birthday</label>
+            <input type="date">
+          </div>
 
           <button>Submit</button>
         </fieldset>
