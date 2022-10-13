@@ -1,39 +1,89 @@
+/* Applies to all elements */
 * {
   color: rgb(36, 39, 44);
 }
 
+/* Style for title and navbar */
 header {
   color: slategray;
+  margin: 20px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+a {
+  text-decoration: none;
 }
 
 h1 {
-  color: hsl(223deg 20% 25%);
+  color: hsl(223deg 30% 45%);
 }
 
 h2 {
-
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
 h3 {
-
+  margin-bottom: 8px;
 }
 
 h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
+strong {
+  color: hsl(223deg 30% 45%);
+  font-weight: 700;
 }
 
 img {
-  
+
 }
 
-.check {
-  color: #3a4953;
-}
-
+/* Style of Forms */
 form {
   background-color: whitesmoke;
+  padding: 12px 14px;
+  border-radius: 10px;
 }
 
 fieldset {
   border: none;
+}
+
+footer {
+  text-align: center;
+  height: 40px;
+}
+
+.attendance {
+  background-color: whitesmoke;
+  border-style: solid;
+  border-color: slategray;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 2px 0 20px 0;
+}
+
+.attendance h2 {
+  padding-left: 12px;
+}
+
+.attendance .check {
+  padding-left: 24px;
+}
+
+.check {
+  color: #3a4953;
+  display: flex;
+  gap: 4px;
+  padding-left: 16px;
+  margin: auto;
 }
