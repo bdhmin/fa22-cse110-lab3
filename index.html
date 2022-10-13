@@ -21,7 +21,7 @@
   <header>
     <h1 style="font-size: 16px; font-weight: 600; margin: 0">CSE 110 Notes</h1>
     <nav>
-      <a href="https://bryanmin.me/">Portfolio</a>
+      <a href="https://bryanmin.me/" target="_blank">Portfolio</a>
       <a href="https://bdhmin.github.io/CSE110/">CSE 110 GH Page</a>
       <a href="https://github.com/bdhmin">Github Profile</a>
     </nav>
@@ -34,12 +34,24 @@
     <hr>
     <section class="attendance">
       <h2>Attendance List</h2>
-      <div class="check"><input type="checkbox">Bryan</div>
-      <div class="check"><input type="checkbox">Caleb</div>
-      <div class="check"><input type="checkbox">Bobby</div>
-      <div class="check"><input type="checkbox">Matty</div>
-      <div class="check"><input type="checkbox">Steve</div>
-      <div class="check"><input type="checkbox">Daniel</div>
+      <div class="user">
+        <input id="bryan" type="checkbox"><label for="bryan">Bryan</label>
+      </div>
+      <div class="user">
+        <input id="caleb" type="checkbox"><label for="caleb">Caleb</label>
+      </div>
+      <div class="user">
+        <input id="bobby" type="checkbox"><label for="bobby">Bobby</label>
+      </div>
+      <div class="user">
+        <input id="matty" type="checkbox"><label for="matty">Matty</label>
+      </div>
+      <div class="user">
+        <input id="steve" type="checkbox"><label for="steve">Steve</label>
+      </div>
+      <div class="user">
+        <input id="daniel" type="checkbox"><label for="daniel">Daniel</label>
+      </div>
     </section>
     <section>
 
@@ -73,8 +85,10 @@
 
       <h4>Questions</h4>
 
-      <em>What does the annotate feature do?</em>
-      <p>The annotate feature <span>allows users to highlight certain texts</span> and save them as annotations.</p>
+      <div class="QA focus-object">
+        <em>Q: What does the annotate feature do?</em>
+        <p>A: The annotate feature <span>allows users to highlight certain texts</span> and save them as annotations.</p>
+      </div>
 
       <details>
         <summary><i>More about highlighting</i></summary>
@@ -83,15 +97,20 @@
       </details>
       <hr>
 
-      <div>
-        <h4>Components</h4>
-        <img src="assets/image.png" alt="Components">
-
-        <h4>Highlight Demo</h4>
-        <video src="assets/video.mov" controls></video>
-
-        <h4>Shared music</h4>
-        <audio src="assets/music.m4a" controls></audio>
+      <h3>Media</h3>
+      <div id="media">
+        <div>
+          <h4>Components</h4>
+          <img class="media-item" src="assets/image.png" alt="Components" width="400" height="auto">
+        </div>
+        <div>
+          <h4>Highlight Demo</h4>
+          <video class="media-item" src="assets/video.mov" width="400" height="auto" controls></video>
+        </div>
+        <div>
+          <h4>Shared music</h4>
+          <audio class="media-item" src="assets/music.m4a" controls></audio>
+        </div>
       </div>
     </section>
 

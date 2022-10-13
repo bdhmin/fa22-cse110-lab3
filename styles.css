@@ -16,7 +16,8 @@ nav {
   display: flex;
   gap: 30px;
 }
-a {
+
+a, p {
   text-decoration: none;
 }
 
@@ -43,8 +44,32 @@ strong {
   font-weight: 700;
 }
 
-img {
+a[target=_blank] {
+  text-decoration: underline;
+  color:rgb(72, 76, 82);
+}
 
+.media-item {
+  border-radius: 10px;
+}
+
+.focus-object {
+  margin: 16px 0;
+}
+
+.QA.focus-object {
+  margin: 16px;
+  padding: 6px 0 6px 14px;
+  border-left:rgb(36, 39, 44) solid 4px;
+}
+
+.QA > em{
+  color:rgb(169, 172, 176);
+  line-height: 1.8em;
+}
+
+.QA > p {
+  margin: 6px 0;
 }
 
 /* Style of Forms */
@@ -58,11 +83,32 @@ fieldset {
   border: none;
 }
 
+legend {
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+
+fieldset > label {
+  font-weight: 600;
+  padding: 0 14px;
+  border: none;
+}
+
 footer {
   text-align: center;
   height: 40px;
 }
 
+#media {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+  gap: 40px
+}
+
+/* Attendance list checker elements */
 .attendance {
   background-color: whitesmoke;
   border-style: solid;
@@ -76,14 +122,17 @@ footer {
   padding-left: 12px;
 }
 
-.attendance .check {
+.attendance .user {
   padding-left: 24px;
 }
 
-.check {
-  color: #3a4953;
-  display: flex;
-  gap: 4px;
-  padding-left: 16px;
+.user label {
+  color: #5f6a71;
+  padding-left: 4px;
   margin: auto;
+}
+
+.user input:checked + label {
+  color: #6cbd4c;
+  transition: 0.2s;
 }
