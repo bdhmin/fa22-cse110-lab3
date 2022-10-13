@@ -3,9 +3,21 @@
   color: rgb(36, 39, 44);
 }
 
+body {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  max-width: 960px;
+  justify-self: center;
+}
 /* Style for title and navbar */
 header {
   color: slategray;
+  width: calc(100vw - 60px);
   margin: 20px 15px;
   display: flex;
   flex-direction: row;
@@ -96,12 +108,13 @@ fieldset > label {
 }
 
 footer {
-  text-align: center;
+  width: 100vw;
   height: 40px;
+  text-align: center;
 }
 
 #media {
-  width: 100vw;
+  width: inherit;
   display: flex;
   flex-direction: row;
   overflow-y: scroll;
@@ -126,10 +139,15 @@ footer {
   padding-left: 24px;
 }
 
+.user input {
+  cursor: pointer;
+}
+
 .user label {
   color: #5f6a71;
   padding-left: 4px;
   margin: auto;
+  cursor: pointer;
 }
 
 .user input:checked + label {
