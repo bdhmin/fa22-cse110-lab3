@@ -12,13 +12,14 @@ body {
 
 main {
   max-width: 960px;
+  width: 100%;
   justify-self: center;
 }
 /* Style for title and navbar */
 header {
   color: slategray;
-  width: calc(100vw - 60px);
-  margin: 20px 15px;
+  width: calc(100vw - 20px);
+  margin: 10px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,6 +28,14 @@ header {
 nav {
   display: flex;
   gap: 30px;
+}
+
+nav > a {
+  transition: 0.2s;
+}
+
+nav > a:hover {
+  color:rgb(169, 172, 176);
 }
 
 a, p {
@@ -56,6 +65,35 @@ strong {
   font-weight: 700;
 }
 
+em {
+  color: hsl(223deg 30% 45%);
+}
+
+.grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 60px;
+  row-gap: 20px;
+}
+
+.grid > .user {
+  background-color: whitesmoke;
+  border: rgb(72, 76, 82) solid 1px;
+  border-radius: 10px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.grid > .lead {
+  height: 70px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
 a[target=_blank] {
   text-decoration: underline;
   color:rgb(72, 76, 82);
@@ -71,7 +109,7 @@ a[target=_blank] {
 
 .QA.focus-object {
   margin: 16px;
-  padding: 6px 0 6px 14px;
+  padding: 6px 14px 6px 14px;
   border-left:rgb(36, 39, 44) solid 4px;
 }
 
@@ -80,9 +118,18 @@ a[target=_blank] {
   line-height: 1.8em;
 }
 
-.QA > p {
+.QA p {
   margin: 6px 0;
 }
+
+.QA.additional-info {
+  padding: 6px 14px 6px 14px;
+}
+
+.QA.additional-info p {
+  display: inline;
+}
+
 
 /* Style of Forms */
 form {
@@ -101,7 +148,7 @@ legend {
   font-weight: 700;
 }
 
-fieldset > label {
+fieldset label {
   font-weight: 600;
   padding: 0 14px;
   border: none;
@@ -111,6 +158,20 @@ footer {
   width: 100vw;
   height: 40px;
   text-align: center;
+}
+
+fieldset {
+  display: block;
+}
+
+fieldset > div {
+  margin-bottom: 12px;
+}
+
+textarea {
+  width: 600px;
+  height: 100px;
+  font-family: 'Public Sans', sans-serif;
 }
 
 #media {
