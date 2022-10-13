@@ -12,13 +12,14 @@ body {
 
 main {
   max-width: 960px;
+  min-width: 680px;
   width: 100%;
   justify-self: center;
 }
 /* Style for title and navbar */
 header {
   color: slategray;
-  width: calc(100vw - 20px);
+  width: calc(100vw - 7mm);
   margin: 10px 15px;
   display: flex;
   flex-direction: row;
@@ -169,7 +170,7 @@ fieldset > div {
 }
 
 textarea {
-  width: 600px;
+  width: 600pt;
   height: 100px;
   font-family: 'Public Sans', sans-serif;
 }
